@@ -23,9 +23,11 @@ namespace WebApplication12
                 //label.Text = "aaaaaaaaaa";
                 //this.Controls.Add(label);
 
-
+                Response.Redirect("https://getbootstrap.com/docs/5.0/utilities/spacing/");
                 ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
                "swal('Good job!', 'You clicked Success button!', 'success')", true);
+              
+              
 
 
             }
@@ -33,10 +35,20 @@ namespace WebApplication12
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-            if(Page.IsValid) { 
+            Response.Redirect("https://getbootstrap.com/docs/5.0/utilities/spacing/");
+            if (Page.IsValid) { 
             ClientScript.RegisterClientScriptBlock(this.GetType(), "alert",
                "swal('Good job!', 'You clicked Success button!', 'success')", true);
+             
+
             }
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            email.Value = "";
+            password.Value = "ok";
+
         }
     }
 }

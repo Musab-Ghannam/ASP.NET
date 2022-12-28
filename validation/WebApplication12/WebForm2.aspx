@@ -4,9 +4,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
 
-    <div class="two" style="display:flex;gap:50px;height:350px ;justify-content:space-around;">
-        <div  style="gap:50px;height:100vh; ">
-  <section class="vh-100">
+    <div class="two">
+        <div  style="gap:50px;height:75vh; ">
+  <section class="vh-150">
   <div class="container-fluid h-custom">
     <div class="row d-flex justify-content-center align-items-center h-100">
       <div class="col-md-9 col-lg-6 col-xl-5">
@@ -51,18 +51,21 @@
             <asp:RequiredFieldValidator ID="RequiredFieldValidator2"  runat="server" ErrorMessage="this field is required" ValidationGroup="logingroup" ControlToValidate="password" ForeColor="Red">*</asp:RequiredFieldValidator>
 
           </div>
-          <asp:ValidationSummary ID="ValidationSummary2" runat="server"  ValidationGroup="logingroup"/>
+          <asp:ValidationSummary ID="ValidationSummary2" runat="server"  ValidationGroup="logingroup" ForeColor="#CC0000"/>
           <div class="d-flex justify-content-between align-items-center">
             <!-- Checkbox -->
             <div class="form-check mb-0">
               <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3" />
               <label class="form-check-label" for="form2Example3">
                 Remember me
+                  <input id="Reset1" type="reset" value="reset" runat="server" />
               </label>
             </div>
             <a href="#!" class="text-body">Forgot password?</a>
           </div>
             <asp:Button ID="Button1" ValidationGroup="logingroup" runat="server" Text="Button" OnClick="Button1_Click" />
+
+          <asp:Button ID="Button3" runat="server" Text="clear" CausesValidation="False" OnClick="Button3_Click" />
           <div class="text-center text-lg-start mt-4 pt-2">
               <asp:LinkButton ID="LinkButton1" href="google.jo" runat="server">LinkButton</asp:LinkButton>
      
@@ -96,6 +99,7 @@
     </div>
     <!-- Right -->
   </div>
+      
 </section>
             </div>
 
@@ -183,7 +187,7 @@
                 <button type="button" class="btn btn-link btn-floating mx-1"> 
                   <i class="fab fa-facebook-f"></i>
                 </button>
-                  <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="sign-up"  />
+                  <asp:ValidationSummary ID="ValidationSummary1" runat="server" ValidationGroup="sign-up" ForeColor="Red"  />
 
                 <button type="button" class="btn btn-link btn-floating mx-1">
                   <i class="fab fa-google"></i>
