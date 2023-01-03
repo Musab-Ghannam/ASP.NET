@@ -70,6 +70,7 @@
     <Content Include="task 2 29 12 22.aspx" />
     <Content Include="task1 29 12 2022.aspx" />
     <Content Include="Web.config" />
+    <Content Include="WebUserControl1.ascx" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -86,6 +87,13 @@
     </Compile>
     <Compile Include="task1 29 12 2022.aspx.designer.cs">
       <DependentUpon>task1 29 12 2022.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebUserControl1.ascx.designer.cs">
+      <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

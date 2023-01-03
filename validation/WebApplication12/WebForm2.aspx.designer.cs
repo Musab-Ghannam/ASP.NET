@@ -60,6 +60,15 @@ namespace WebApplication12
         protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary2;
 
         /// <summary>
+        /// Reset1 control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.HtmlControls.HtmlInputReset Reset1;
+
+        /// <summary>
         /// Button1 control.
         /// </summary>
         /// <remarks>
